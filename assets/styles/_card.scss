@@ -1,0 +1,81 @@
+// Card component styles
+
+.card {
+    height: 23.43rem; // (375/16 - Height)
+    width: 21.875rem; // (325/16 - Width)
+    display: block;
+    margin: auto;
+    margin-top: 25vh;
+    
+    .card__t {
+        height: 30%;
+        background-image: url(../images/bg-pattern-card.svg);
+        background-repeat: no-repeat;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card__m {
+        height: 40%;
+        background-color: white;
+        position: relative;
+        text-align: center;
+
+        img {
+            margin-top: -3rem;
+            height: 96px;
+            width: auto;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        h4 {
+            font-size: $h-fs;
+            color: $t-c;
+            margin-top: 1em;
+            letter-spacing: 0.025em;
+            line-height: 1rem;
+
+            span {
+                color: $d-c;
+                font-weight: 300;
+            }
+        }
+
+        span {
+            position: relative;
+            color: $d-c;
+            font-weight: 300;
+            top: 10%;
+        }
+    }
+
+    .card__b {
+        height: 30%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0 0 15px 15px;
+        border-top: 0.2px solid $br-c;
+
+        ul {
+            text-align: center;
+            line-height: 1.2em;
+
+                .items {
+                    font-size: $h-fs;
+                    font-weight: $f-b;
+                }
+
+                .items__n {
+                    font-weight: 300;
+                    font-size: 0.7rem;
+                    margin-top: 0.3rem;
+                    color: $br-c;
+                    letter-spacing: 0.13em;
+                }
+            }
+
+        }
+    }

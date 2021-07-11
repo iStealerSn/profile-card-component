@@ -1,0 +1,36 @@
+// Various breakpoints 
+
+$des-width: 978px;
+$mob-width: 375px;
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: $h-fs;
+    font-weight: $f-b;
+}
+
+ul, l {
+    list-style: none;
+}
+
+// Had to use media query for placement of the background SVG's
+
+@media  only screen and (min-width: 375px) and (max-width:767px) {
+
+    body {
+        background-position: top -40rem left -45rem, bottom -48rem right -43rem;
+    }
+}
+
+@media  only screen and (min-width: 768px) {
+
+    body {
+        background-position: top -32rem left -20rem, bottom -50rem right -15rem;
+    }
+}
